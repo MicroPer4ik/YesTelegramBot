@@ -30,3 +30,12 @@ void Telegram_OnLogCommon(string msg, Enum typeEvent, ConsoleColor color)
     Console.ResetColor();
 }
 
+while (true)
+{
+    string exitMessage = Console.ReadLine();
+    if(exitMessage == EXIT_COMMAND)
+    {
+        Environment.Exit(0);
+    }
+}
+
